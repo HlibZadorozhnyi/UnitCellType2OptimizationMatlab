@@ -1,0 +1,174 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrame",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "theta",
+         "type": "float",
+         "value": 0.0
+      },
+      {
+         "name": "phi",
+         "type": "float",
+         "value": 0.0
+      },
+      {
+         "name": "W",
+         "type": "float",
+         "value": 10.0
+      },
+      {
+         "name": "L",
+         "type": "float",
+         "value": 10.0
+      },
+      {
+         "name": "th",
+         "type": "float",
+         "value": 0.035
+      },
+      {
+         "name": "h",
+         "type": "float",
+         "value": 0.9
+      },
+      {
+         "name": "Wpad",
+         "type": "float",
+         "value": 0.475
+      },
+      {
+         "name": "Wpadgap",
+         "type": "float",
+         "value": 0.35
+      },
+      {
+         "name": "R",
+         "type": "float",
+         "value": 5.4
+      },
+      {
+         "name": "Cp",
+         "type": "float",
+         "value": 0.075
+      },
+      {
+         "name": "C0",
+         "type": "float",
+         "value": 2.1
+      },
+      {
+         "name": "V",
+         "type": "float",
+         "value": 20.0
+      },
+      {
+         "name": "Vj",
+         "type": "float",
+         "value": 3.0
+      },
+      {
+         "name": "M",
+         "type": "float",
+         "value": 1.2
+      },
+      {
+         "name": "Lp",
+         "type": "float",
+         "value": 0.45
+      },
+      {
+         "name": "Ct",
+         "type": "string",
+         "value": "(-1) / ((-7.44107667256138)*2*pi*0.01)"
+      },
+      {
+         "name": "D",
+         "type": "float",
+         "value": 15.0
+      },
+      {
+         "name": "Wline",
+         "type": "float",
+         "value": 0.967
+      },
+      {
+         "name": "Lpad",
+         "type": "float",
+         "value": 0.75
+      },
+      {
+         "name": "Wgap",
+         "type": "float",
+         "value": 0.35
+      },
+      {
+         "name": "Wgap7",
+         "type": "float",
+         "value": 0.35
+      },
+      {
+         "name": "Wgap1",
+         "type": "float",
+         "value": 1.554
+      },
+      {
+         "name": "Wgap2",
+         "type": "float",
+         "value": 0.759
+      },
+      {
+         "name": "Wgap3",
+         "type": "float",
+         "value": 0.926
+      },
+      {
+         "name": "Wgap4",
+         "type": "float",
+         "value": 1.98
+      },
+      {
+         "name": "Wgap5",
+         "type": "float",
+         "value": 1.466
+      },
+      {
+         "name": "Wgap6",
+         "type": "float",
+         "value": 1.381
+      },
+      {
+         "name": "Wgap8",
+         "type": "float",
+         "value": 1.613
+      },
+      {
+         "name": "Wgap9",
+         "type": "float",
+         "value": 1.236
+      },
+      {
+         "name": "Wgap10",
+         "type": "float",
+         "value": 0.23
+      },
+      {
+         "name": "Wgap11",
+         "type": "float",
+         "value": 1.951
+      },
+      {
+         "name": "Wgap12",
+         "type": "float",
+         "value": 1.395
+      },
+      {
+         "name": "Wgap13",
+         "type": "float",
+         "value": 0.708
+      }
+   ],
+   "outputVariables": []
+}

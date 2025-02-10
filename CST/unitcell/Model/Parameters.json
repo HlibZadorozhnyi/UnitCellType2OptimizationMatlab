@@ -1,0 +1,177 @@
+{
+    "parameters": [
+        {
+            "descr": "spherical angle of incident plane wave",
+            "expr": "0",
+            "name": "theta",
+            "value": "0"
+        },
+        {
+            "descr": "spherical angle of incident plane wave",
+            "expr": "0",
+            "name": "phi",
+            "value": "0"
+        },
+        {
+            "expr": "10",
+            "name": "W",
+            "value": "10"
+        },
+        {
+            "expr": "10",
+            "name": "L",
+            "value": "10"
+        },
+        {
+            "expr": "0.035",
+            "name": "th",
+            "value": "0.035"
+        },
+        {
+            "expr": "0.9",
+            "name": "h",
+            "value": "0.9"
+        },
+        {
+            "expr": "0.475",
+            "name": "Wpad",
+            "value": "0.475"
+        },
+        {
+            "expr": "0.35",
+            "name": "Wpadgap",
+            "value": "0.35"
+        },
+        {
+            "expr": "5.4",
+            "name": "R",
+            "value": "5.4"
+        },
+        {
+            "expr": "0.075",
+            "name": "Cp",
+            "value": "0.075"
+        },
+        {
+            "expr": "2.1",
+            "name": "C0",
+            "value": "2.1"
+        },
+        {
+            "expr": "20",
+            "name": "V",
+            "value": "20"
+        },
+        {
+            "expr": "3",
+            "name": "Vj",
+            "value": "3"
+        },
+        {
+            "expr": "C0/(((V /Vj)+1)^M)",
+            "name": "Cj",
+            "value": "0.182260013110014"
+        },
+        {
+            "expr": "1.2",
+            "name": "M",
+            "value": "1.2"
+        },
+        {
+            "expr": "0.45",
+            "name": "Lp",
+            "value": "0.45"
+        },
+        {
+            "expr": "(-1) / ((-7.44107667256138)*2*pi*0.01)",
+            "name": "Ct",
+            "value": "2.13886981811075"
+        },
+        {
+            "expr": "15",
+            "name": "D",
+            "value": "15"
+        },
+        {
+            "expr": "0.96699999999999997",
+            "name": "Wline",
+            "value": "0.96699999999999997"
+        },
+        {
+            "expr": "0.75",
+            "name": "Lpad",
+            "value": "0.75"
+        },
+        {
+            "expr": "0.35",
+            "name": "Wgap",
+            "value": "0.35"
+        },
+        {
+            "expr": "0.34999999999999998",
+            "name": "Wgap7",
+            "value": "0.34999999999999998"
+        },
+        {
+            "expr": "1.554",
+            "name": "Wgap1",
+            "value": "1.554"
+        },
+        {
+            "expr": "0.75900000000000001",
+            "name": "Wgap2",
+            "value": "0.75900000000000001"
+        },
+        {
+            "expr": "0.92600000000000005",
+            "name": "Wgap3",
+            "value": "0.92600000000000005"
+        },
+        {
+            "expr": "1.98",
+            "name": "Wgap4",
+            "value": "1.98"
+        },
+        {
+            "expr": "1.466",
+            "name": "Wgap5",
+            "value": "1.466"
+        },
+        {
+            "expr": "1.381",
+            "name": "Wgap6",
+            "value": "1.381"
+        },
+        {
+            "expr": "1.613",
+            "name": "Wgap8",
+            "value": "1.613"
+        },
+        {
+            "expr": "1.236",
+            "name": "Wgap9",
+            "value": "1.236"
+        },
+        {
+            "expr": "0.23000000000000001",
+            "name": "Wgap10",
+            "value": "0.23000000000000001"
+        },
+        {
+            "expr": "1.9510000000000001",
+            "name": "Wgap11",
+            "value": "1.9510000000000001"
+        },
+        {
+            "expr": "1.395",
+            "name": "Wgap12",
+            "value": "1.395"
+        },
+        {
+            "expr": "0.70799999999999996",
+            "name": "Wgap13",
+            "value": "0.70799999999999996"
+        }
+    ],
+    "version": 1
+}

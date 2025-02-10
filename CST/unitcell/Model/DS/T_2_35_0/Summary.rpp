@@ -1,0 +1,21 @@
+11
+0
+0
+1
+- Touchstone Export
+- Touchstone Export
+1
+1D
+S-Parameters
+1
+ED10
+- Touchstone Export^+MWS+DS.rtp
+VBA
+1
+- Touchstone Export
+5
+1:Tasks\Sweep1\SPara1
+2:aAbBcCzZ
+3:VOID
+4:Tasks\Unselected
+5:Tasks\Sweep1\SPara1\Port Impedances\Z1
