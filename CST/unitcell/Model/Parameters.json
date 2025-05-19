@@ -108,69 +108,69 @@
             "value": "0.35"
         },
         {
-            "expr": "0.34999999999999998",
+            "expr": "0.35",
             "name": "Wgap7",
-            "value": "0.34999999999999998"
+            "value": "0.35"
         },
         {
-            "expr": "1.554",
+            "expr": "1",
             "name": "Wgap1",
-            "value": "1.554"
+            "value": "1"
         },
         {
-            "expr": "0.75900000000000001",
+            "expr": "1",
             "name": "Wgap2",
-            "value": "0.75900000000000001"
+            "value": "1"
         },
         {
-            "expr": "0.92600000000000005",
+            "expr": "1",
             "name": "Wgap3",
-            "value": "0.92600000000000005"
+            "value": "1"
         },
         {
-            "expr": "1.98",
+            "expr": "1",
             "name": "Wgap4",
-            "value": "1.98"
+            "value": "1"
         },
         {
-            "expr": "1.466",
+            "expr": "1",
             "name": "Wgap5",
-            "value": "1.466"
+            "value": "1"
         },
         {
-            "expr": "1.381",
+            "expr": "1",
             "name": "Wgap6",
-            "value": "1.381"
+            "value": "1"
         },
         {
-            "expr": "1.613",
+            "expr": "Wgap6",
             "name": "Wgap8",
-            "value": "1.613"
+            "value": "1"
         },
         {
-            "expr": "1.236",
+            "expr": "Wgap5",
             "name": "Wgap9",
-            "value": "1.236"
+            "value": "1"
         },
         {
-            "expr": "0.23000000000000001",
+            "expr": "Wgap4",
             "name": "Wgap10",
-            "value": "0.23000000000000001"
+            "value": "1"
         },
         {
-            "expr": "1.9510000000000001",
+            "expr": "Wgap3",
             "name": "Wgap11",
-            "value": "1.9510000000000001"
+            "value": "1"
         },
         {
-            "expr": "1.395",
+            "expr": "Wgap2",
             "name": "Wgap12",
-            "value": "1.395"
+            "value": "1"
         },
         {
-            "expr": "0.70799999999999996",
+            "expr": "Wgap1",
             "name": "Wgap13",
-            "value": "0.70799999999999996"
+            "value": "1"
         }
     ],
     "version": 1

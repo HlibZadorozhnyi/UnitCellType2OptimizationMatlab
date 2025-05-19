@@ -112,62 +112,32 @@
       {
          "name": "Wgap1",
          "type": "float",
-         "value": 1.554
+         "value": 1.0
       },
       {
          "name": "Wgap2",
          "type": "float",
-         "value": 0.759
+         "value": 1.0
       },
       {
          "name": "Wgap3",
          "type": "float",
-         "value": 0.926
+         "value": 1.0
       },
       {
          "name": "Wgap4",
          "type": "float",
-         "value": 1.98
+         "value": 1.0
       },
       {
          "name": "Wgap5",
          "type": "float",
-         "value": 1.466
+         "value": 1.0
       },
       {
          "name": "Wgap6",
          "type": "float",
-         "value": 1.381
-      },
-      {
-         "name": "Wgap8",
-         "type": "float",
-         "value": 1.613
-      },
-      {
-         "name": "Wgap9",
-         "type": "float",
-         "value": 1.236
-      },
-      {
-         "name": "Wgap10",
-         "type": "float",
-         "value": 0.23
-      },
-      {
-         "name": "Wgap11",
-         "type": "float",
-         "value": 1.951
-      },
-      {
-         "name": "Wgap12",
-         "type": "float",
-         "value": 1.395
-      },
-      {
-         "name": "Wgap13",
-         "type": "float",
-         "value": 0.708
+         "value": 1.0
       }
    ],
    "outputVariables": []

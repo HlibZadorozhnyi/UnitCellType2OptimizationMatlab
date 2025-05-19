@@ -889,3 +889,193 @@ Mesh.MeshType "PBA"
 '[VERSION]2024.1|33.0.1|20231016[/VERSION]
 ChangeSolverType "HF Time Domain"
 
+'@ set mesh properties (Hexahedral)
+
+'[VERSION]2024.1|33.0.1|20231016[/VERSION]
+With Mesh 
+     .MeshType "PBA" 
+     .SetCreator "High Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "Hex" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "30" 
+     .Set "StepsPerWaveFar", "30" 
+     .Set "WavelengthRefinementSameAsNear", "1" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "20" 
+     .Set "StepsPerBoxFar", "1" 
+     .Set "MaxStepNear", "0" 
+     .Set "MaxStepFar", "0" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     .Set "UseMaxStepAbsolute", "0" 
+     .Set "GeometryRefinementSameAsNear", "0" 
+     'MIN CELL 
+     .Set "UseRatioLimitGeometry", "1" 
+     .Set "RatioLimitGeometry", "15" 
+     .Set "MinStepGeometryX", "0" 
+     .Set "MinStepGeometryY", "0" 
+     .Set "MinStepGeometryZ", "0" 
+     .Set "UseSameMinStepGeometryXYZ", "1" 
+End With 
+With MeshSettings 
+     .Set "PlaneMergeVersion", "2" 
+End With 
+With MeshSettings 
+     .SetMeshType "Hex" 
+     .Set "FaceRefinementType", "NONE" 
+     .Set "FaceRefinementRatio", "2" 
+     .Set "FaceRefinementStep", "0" 
+     .Set "FaceRefinementNSteps", "2" 
+     .Set "EllipseRefinementType", "NONE" 
+     .Set "EllipseRefinementRatio", "2" 
+     .Set "EllipseRefinementStep", "0" 
+     .Set "EllipseRefinementNSteps", "2" 
+     .Set "FaceRefinementBufferLines", "3" 
+     .Set "EdgeRefinementType", "RATIO" 
+     .Set "EdgeRefinementRatio", "2" 
+     .Set "EdgeRefinementStep", "0" 
+     .Set "EdgeRefinementBufferLines", "3" 
+     .Set "RefineEdgeMaterialGlobal", "0" 
+     .Set "RefineAxialEdgeGlobal", "0" 
+     .Set "BufferLinesNear", "3" 
+     .Set "UseDielectrics", "1" 
+     .Set "EquilibrateOn", "1" 
+     .Set "Equilibrate", "1.5" 
+     .Set "IgnoreThinPanelMaterial", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Hex" 
+     .Set "SnapToAxialEdges", "1"
+     .Set "SnapToPlanes", "1"
+     .Set "SnapToSpheres", "1"
+     .Set "SnapToEllipses", "1"
+     .Set "SnapToCylinders", "1"
+     .Set "SnapToCylinderCenters", "1"
+     .Set "SnapToEllipseCenters", "1"
+     .Set "SnapToTori", "1"
+End With 
+With Mesh 
+     .ConnectivityCheck "True"
+     .UsePecEdgeModel "True" 
+     .PointAccEnhancement "0" 
+     .TSTVersion "0"
+	  .PBAVersion "2023101624" 
+     .SetCADProcessingMethod "MultiThread22", "-1" 
+     .SetGPUForMatrixCalculationDisabled "False" 
+End With
+
+'@ define material: IS400
+
+'[VERSION]2024.1|33.0.1|20231016[/VERSION]
+With Material 
+     .Reset 
+     .Name "IS400"
+     .Folder ""
+     .Rho "0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0"
+     .SpecificHeat "0", "J/K/kg"
+     .DynamicViscosity "0"
+     .UseEmissivity "True"
+     .Emissivity "0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .Absorptance "0"
+     .MechanicsType "Unused"
+     .IntrinsicCarrierDensity "0"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "GHz"
+     .MaterialUnit "Geometry", "mm"
+     .MaterialUnit "Time", "ns"
+     .MaterialUnit "Temperature", "degC"
+     .Epsilon "4.43"
+     .Mu "1"
+     .Sigma "0.0"
+     .TanD "0.0189"
+     .TanDFreq "0.0"
+     .TanDGiven "True"
+     .TanDModel "ConstTanD"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstTanD"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelEps "False"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelMu "False"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "1", "0", "0" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .Create
+End With
+
+'@ define material colour: IS400
+
+'[VERSION]2024.1|33.0.1|20231016[/VERSION]
+With Material 
+     .Name "IS400"
+     .Folder ""
+     .Colour "1", "0", "0" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .ChangeColour 
+End With
+
+'@ define time domain solver parameters
+
+'[VERSION]2024.1|33.0.1|20231016[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With Solver 
+     .Method "Hexahedral"
+     .CalculationType "TD-S"
+     .StimulationPort "All"
+     .StimulationMode "All"
+     .SteadyStateLimit "-80"
+     .MeshAdaption "False"
+     .AutoNormImpedance "False"
+     .NormingImpedance "50"
+     .CalculateModesOnly "False"
+     .SParaSymmetry "False"
+     .StoreTDResultsInCache  "False"
+     .RunDiscretizerOnly "False"
+     .FullDeembedding "False"
+     .SuperimposePLWExcitation "False"
+     .UseSensitivityAnalysis "False"
+End With
+

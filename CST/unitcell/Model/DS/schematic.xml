@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SchematicTopology Version="2.5" Seed="57" Grid="25">
+<SchematicTopology Version="2.5" Seed="76" Grid="25">
     <Block Id="1" ForeignId="819271555" Class="MWSSCHEM" ImageIndex="1">
         <Size Height="525" Width="300"/>
         <Pins Distribution="Custom">
@@ -51,78 +51,118 @@
         <Image IconPosition="TopRight" FileName="../3D/Model.dib" Scale="AutoFit">
             <Size Height="256" Width="256"/>
         </Image>
-        <Pos X="-75" Y="87.5"/>
+        <Pos X="0" Y="87.5"/>
         <ToolTip>CST MICROWAVE STUDIO schematic block MWSSCHEM1</ToolTip>
     </Block>
-    <Block Id="2" ForeignId="550193183" Class="GND">
+    <Link Id="48" Flags="KeepInReconstruction">
+        <Connection Pin="4" Ref="1" Type="Pin"/>
+        <Connection Pin="0" Ref="76" Type="Pin"/>
+        <Route>
+            <Pos X="-170" Y="50"/>
+            <Pos X="-275" Y="50"/>
+        </Route>
+        <Pos X="0" Y="0"/>
+    </Link>
+    <Link Id="49" Flags="KeepInReconstruction">
+        <Connection Pin="5" Ref="1" Type="Pin"/>
+        <Connection Pin="0" Ref="75" Type="Pin"/>
+        <Route>
+            <Pos X="-170" Y="125"/>
+            <Pos X="-280" Y="125"/>
+        </Route>
+        <Pos X="0" Y="0"/>
+    </Link>
+    <Block Id="67" ForeignId="550193183" Class="GND">
+        <Size Height="50" Width="50"/>
+        <Transform m12="1" m21="-1" m22="0" m11="0"/>
+        <Pos X="-300" Y="-25"/>
+        <ToolTip>Ground GND1</ToolTip>
+    </Block>
+    <Block Id="68" ForeignId="1472746148" Class="EXTPORT" Flags="NotResizable">
+        <Size Height="50" Width="100"/>
+        <Pins Distribution="Custom">
+            <Pin Index="0" Port="0" BlockPosition="Center">
+                <Label>
+                    <LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Ports>
+                <Port Name="" Label=""/>
+            </Ports>
+        </Pins>
+        <Pos X="-325" Y="-100"/>
+        <Label>1</Label>
+        <ToolTip>External Port 1</ToolTip>
+    </Block>
+    <Link Id="69">
+        <Connection Pin="0" Ref="67" Type="Pin"/>
+        <Connection Pin="1" Ref="1" Type="Pin"/>
+        <Route>
+            <Pos X="-280" Y="-25"/>
+            <Pos X="-170" Y="-25"/>
+        </Route>
+        <Pos X="0" Y="0"/>
+    </Link>
+    <Link Id="70">
+        <Connection Pin="0" Ref="68" Type="Pin"/>
+        <Connection Pin="0" Ref="1" Type="Pin"/>
+        <Route>
+            <Pos X="-275" Y="-100"/>
+            <Pos X="-170" Y="-100"/>
+        </Route>
+        <Pos X="0" Y="0"/>
+    </Link>
+    <Block Id="71" ForeignId="702622835" Class="GND">
+        <Size Height="50" Width="50"/>
+        <Transform m12="1" m21="-1" m22="0" m11="0"/>
+        <Pos X="-300" Y="275"/>
+        <ToolTip>Ground GND2</ToolTip>
+    </Block>
+    <Block Id="72" ForeignId="1886051299" Class="EXTPORT" Flags="NotResizable">
+        <Size Height="50" Width="100"/>
+        <Pins Distribution="Custom">
+            <Pin Index="0" Port="0" BlockPosition="Center">
+                <Label>
+                    <LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Ports>
+                <Port Name="" Label=""/>
+            </Ports>
+        </Pins>
+        <Pos X="-325" Y="200"/>
+        <Label>2</Label>
+        <ToolTip>External Port 2</ToolTip>
+    </Block>
+    <Link Id="73">
+        <Connection Pin="0" Ref="71" Type="Pin"/>
+        <Connection Pin="3" Ref="1" Type="Pin"/>
+        <Route>
+            <Pos X="-280" Y="275"/>
+            <Pos X="-170" Y="275"/>
+        </Route>
+        <Pos X="0" Y="0"/>
+    </Link>
+    <Link Id="74">
+        <Connection Pin="0" Ref="72" Type="Pin"/>
+        <Connection Pin="2" Ref="1" Type="Pin"/>
+        <Route>
+            <Pos X="-275" Y="200"/>
+            <Pos X="-170" Y="200"/>
+        </Route>
+        <Pos X="0" Y="0"/>
+    </Link>
+    <Block Id="75" ForeignId="871435474" Class="GND">
         <Size Height="50" Width="50"/>
         <Transform m12="1" m21="-1" m22="0" m11="0"/>
         <Pos X="-300" Y="125"/>
-        <ToolTip>Ground GND1</ToolTip>
+        <ToolTip>Ground GND3</ToolTip>
     </Block>
-    <Block Id="3" ForeignId="42893366" Class="CAP" Flags="NotResizable">
-        <Size Height="60" Width="50"/>
-        <Transform m12="-1" m21="1" m22="0" m11="0"/>
-        <Pos X="-650" Y="650"/>
-        <Label>Cj p</Label>
-        <ToolTip>Capacitor CAP1</ToolTip>
-    </Block>
-    <Block Id="4" ForeignId="1677292356" Class="RES">
-        <Size Height="50" Width="100"/>
-        <Transform m12="-1" m21="1" m22="0" m11="0"/>
-        <Pos X="-650" Y="475"/>
-        <Label>R</Label>
-        <ToolTip>Resistor RES1</ToolTip>
-    </Block>
-    <Block Id="5" ForeignId="639530735" Class="CAP" Flags="NotResizable">
-        <Size Height="60" Width="50"/>
-        <Transform m12="-1" m21="1" m22="0" m11="0"/>
-        <Pos X="-500" Y="575"/>
-        <Label>Cp p</Label>
-        <ToolTip>Capacitor CAP2</ToolTip>
-    </Block>
-    <Block Id="6" ForeignId="954072141" Class="IND" Flags="NotResizable">
-        <Size Height="50" Width="100"/>
-        <Transform m12="-1" m21="1" m22="0" m11="0"/>
-        <Pos X="-575" Y="300"/>
-        <Label>Lp n</Label>
-        <ToolTip>Inductor IND1</ToolTip>
-    </Block>
-    <Junction Id="7" Fixed="0">
-        <Pos X="-575" Y="400"/>
-    </Junction>
-    <Block Id="9" ForeignId="1371527081" Class="CAP" Flags="NotResizable">
-        <Size Height="60" Width="50"/>
-        <Transform m12="-1" m21="1" m22="0" m11="0"/>
-        <Pos X="-650" Y="-100"/>
-        <Label>Cj p</Label>
-        <ToolTip>Capacitor CAP4</ToolTip>
-    </Block>
-    <Block Id="10" ForeignId="1906073055" Class="RES">
-        <Size Height="50" Width="100"/>
-        <Transform m12="-1" m21="1" m22="0" m11="0"/>
-        <Pos X="-650" Y="-275"/>
-        <Label>R</Label>
-        <ToolTip>Resistor RES2</ToolTip>
-    </Block>
-    <Block Id="11" ForeignId="2009177493" Class="CAP" Flags="NotResizable">
-        <Size Height="60" Width="50"/>
-        <Transform m12="-1" m21="1" m22="0" m11="0"/>
-        <Pos X="-500" Y="-175"/>
-        <Label>Cp p</Label>
-        <ToolTip>Capacitor CAP3</ToolTip>
-    </Block>
-    <Block Id="12" ForeignId="1815395026" Class="IND" Flags="NotResizable">
-        <Size Height="50" Width="100"/>
-        <Transform m12="-1" m21="1" m22="0" m11="0"/>
-        <Pos X="-575" Y="-450"/>
-        <Label>Lp n</Label>
-        <ToolTip>Inductor IND2</ToolTip>
-    </Block>
-    <Junction Id="13" Fixed="0">
-        <Pos X="-575" Y="-350"/>
-    </Junction>
-    <Block Id="15" ForeignId="1472746148" Class="EXTPORT" Flags="NotResizable">
+    <Block Id="76" ForeignId="2018513688" Class="EXTPORT" Flags="NotResizable">
         <Size Height="50" Width="100"/>
         <Pins Distribution="Custom">
             <Pin Index="0" Port="0" BlockPosition="Center">
@@ -137,189 +177,7 @@
             </Ports>
         </Pins>
         <Pos X="-325" Y="50"/>
-        <Label>1</Label>
-        <ToolTip>External Port 1</ToolTip>
+        <Label>3</Label>
+        <ToolTip>External Port 3</ToolTip>
     </Block>
-    <Link Id="16">
-        <Connection Pin="0" Ref="3" Type="Pin"/>
-        <Connection Id="55" Type="Junction"/>
-        <Route>
-            <Pos X="-650" Y="695"/>
-            <Pos X="-650" Y="700"/>
-            <Pos X="-500" Y="700"/>
-            <Pos X="-500" Y="625"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
-    <Link Id="17">
-        <Connection Pin="1" Ref="3" Type="Pin"/>
-        <Connection Pin="0" Ref="4" Type="Pin"/>
-        <Route>
-            <Pos X="-1275" Y="-270"/>
-            <Pos X="-1275" Y="-330"/>
-        </Route>
-        <Pos X="625" Y="875"/>
-    </Link>
-    <Link Id="18">
-        <Connection Pin="1" Ref="4" Type="Pin"/>
-        <Connection Id="7" Type="Junction"/>
-        <Route>
-            <Pos X="-1275" Y="-470"/>
-            <Pos X="-1275" Y="-475"/>
-            <Pos X="-1200" Y="-475"/>
-        </Route>
-        <Pos X="625" Y="875"/>
-    </Link>
-    <Link Id="19">
-        <Connection Pin="1" Ref="5" Type="Pin"/>
-        <Connection Id="7" Type="Junction"/>
-        <Route>
-            <Pos X="-1125" Y="-345"/>
-            <Pos X="-1125" Y="-475"/>
-            <Pos X="-1200" Y="-475"/>
-        </Route>
-        <Pos X="625" Y="875"/>
-    </Link>
-    <Link Id="20">
-        <Connection Id="7" Type="Junction"/>
-        <Connection Pin="0" Ref="6" Type="Pin"/>
-        <Route>
-            <Pos X="-1200" Y="-475"/>
-            <Pos X="-1200" Y="-505"/>
-        </Route>
-        <Pos X="625" Y="875"/>
-    </Link>
-    <Link Id="22">
-        <Connection Pin="0" Ref="9" Type="Pin"/>
-        <Connection Id="50" Type="Junction"/>
-        <Route>
-            <Pos X="-650" Y="-55"/>
-            <Pos X="-650" Y="-50"/>
-            <Pos X="-500" Y="-50"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
-    <Link Id="23">
-        <Connection Pin="1" Ref="9" Type="Pin"/>
-        <Connection Pin="0" Ref="10" Type="Pin"/>
-        <Route>
-            <Pos X="-1275" Y="-270"/>
-            <Pos X="-1275" Y="-330"/>
-        </Route>
-        <Pos X="625" Y="125"/>
-    </Link>
-    <Link Id="24">
-        <Connection Pin="1" Ref="10" Type="Pin"/>
-        <Connection Id="13" Type="Junction"/>
-        <Route>
-            <Pos X="-1275" Y="-470"/>
-            <Pos X="-1275" Y="-475"/>
-            <Pos X="-1200" Y="-475"/>
-        </Route>
-        <Pos X="625" Y="125"/>
-    </Link>
-    <Link Id="25">
-        <Connection Pin="1" Ref="11" Type="Pin"/>
-        <Connection Id="13" Type="Junction"/>
-        <Route>
-            <Pos X="-1125" Y="-345"/>
-            <Pos X="-1125" Y="-475"/>
-            <Pos X="-1200" Y="-475"/>
-        </Route>
-        <Pos X="625" Y="125"/>
-    </Link>
-    <Link Id="26">
-        <Connection Id="13" Type="Junction"/>
-        <Connection Pin="0" Ref="12" Type="Pin"/>
-        <Route>
-            <Pos X="-1200" Y="-475"/>
-            <Pos X="-1200" Y="-505"/>
-        </Route>
-        <Pos X="625" Y="125"/>
-    </Link>
-    <Link Id="48">
-        <Connection Pin="4" Ref="1" Type="Pin"/>
-        <Connection Pin="0" Ref="15" Type="Pin"/>
-        <Route>
-            <Pos X="-245" Y="50"/>
-            <Pos X="-275" Y="50"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
-    <Link Id="49">
-        <Connection Pin="5" Ref="1" Type="Pin"/>
-        <Connection Pin="0" Ref="2" Type="Pin"/>
-        <Route>
-            <Pos X="-245" Y="125"/>
-            <Pos X="-280" Y="125"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
-    <Junction Id="50" Fixed="0">
-        <Pos X="-500" Y="-50"/>
-    </Junction>
-    <Link Id="51">
-        <Connection Pin="1" Ref="1" Type="Pin"/>
-        <Connection Id="50" Type="Junction"/>
-        <Route>
-            <Pos X="-245" Y="-25"/>
-            <Pos X="-500" Y="-25"/>
-            <Pos X="-500" Y="-50"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
-    <Link Id="52">
-        <Connection Id="50" Type="Junction"/>
-        <Connection Pin="0" Ref="11" Type="Pin"/>
-        <Route>
-            <Pos X="-500" Y="-50"/>
-            <Pos X="-500" Y="-130"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
-    <Link Id="53">
-        <Connection Pin="1" Ref="12" Type="Pin"/>
-        <Connection Pin="0" Ref="1" Type="Pin"/>
-        <Route>
-            <Pos X="-575" Y="-520"/>
-            <Pos X="-575" Y="-525"/>
-            <Pos X="-355" Y="-525"/>
-            <Pos X="-355" Y="-100"/>
-            <Pos X="-245" Y="-100"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
-    <Link Id="54">
-        <Connection Pin="2" Ref="1" Type="Pin"/>
-        <Connection Pin="1" Ref="6" Type="Pin"/>
-        <Route>
-            <Pos X="-245" Y="200"/>
-            <Pos X="-575" Y="200"/>
-            <Pos X="-575" Y="230"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
-    <Junction Id="55" Fixed="0">
-        <Pos X="-500" Y="625"/>
-    </Junction>
-    <Link Id="56">
-        <Connection Pin="3" Ref="1" Type="Pin"/>
-        <Connection Id="55" Type="Junction"/>
-        <Route>
-            <Pos X="-245" Y="275"/>
-            <Pos X="-355" Y="275"/>
-            <Pos X="-355" Y="625"/>
-            <Pos X="-500" Y="625"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
-    <Link Id="57">
-        <Connection Id="55" Type="Junction"/>
-        <Connection Pin="0" Ref="5" Type="Pin"/>
-        <Route>
-            <Pos X="-500" Y="625"/>
-            <Pos X="-500" Y="620"/>
-        </Route>
-        <Pos X="0" Y="0"/>
-    </Link>
 </SchematicTopology>

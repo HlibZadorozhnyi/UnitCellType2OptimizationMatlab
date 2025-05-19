@@ -23,19 +23,12 @@ function cost = singleRun(x)
     Wgap4 = x(1,5);
     Wgap5 = x(1,6);
     Wgap6 = x(1,7);
-    Wgap7 = 0.35; 
-    Wgap8 = x(1,8);
-    Wgap9 = x(1,9);
-    Wgap10 = x(1,10);
-    Wgap11 = x(1,11);
-    Wgap12 = x(1,12);
-    Wgap13 = x(1,13);
-    Wgap = [Wgap1 Wgap2 Wgap3 Wgap4 Wgap5 Wgap6 Wgap7 Wgap8 Wgap9 Wgap10 Wgap11 Wgap12 Wgap13];
+    Wgap7 = 0.35;
+    Wgap = [Wgap1 Wgap2 Wgap3 Wgap4 Wgap5 Wgap6];
 
     if (Wline >= 0.95) && ((Wline+2*Wgap7) <= 9) ...
             && (Wgap1 >= 0.1)  && (Wgap2 >= 0.1)  && (Wgap3 >= 0.1)  && (Wgap4 >= 0.1) ...
-            && (Wgap5 >= 0.1)  && (Wgap6 >= 0.1)  && (Wgap8 >= 0.1)  && (Wgap9 >= 0.1) ...
-            && (Wgap10 >= 0.1) && (Wgap11 >= 0.1) && (Wgap12 >= 0.1) && (Wgap13 >= 0.1)
+            && (Wgap5 >= 0.1)  && (Wgap6 >= 0.1)
 
         
 

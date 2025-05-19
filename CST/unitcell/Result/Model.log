@@ -1,50 +1,464 @@
-2025-02-10 16:57:37   Build version: 2024.1 Release from 2023-10-16 (change 1181985)
+2025-05-19 12:12:16   Build version: 2024.1 Release from 2023-10-16 (change 1181985)
 
-2025-02-10 16:57:37   Starting adaptive port meshing.
-
-                      ------------------------------------------------------------------------------
-2025-02-10 16:57:37   Mode calculation for port 3:
+2025-05-19 12:12:16   Starting adaptive port meshing.
 
                       ------------------------------------------------------------------------------
-2025-02-10 16:57:37   
+2025-05-19 12:12:16   Mode calculation for port 3:
 
                       ------------------------------------------------------------------------------
-2025-02-10 16:57:37   
+2025-05-19 12:12:16   
 
                       ------------------------------------------------------------------------------
-2025-02-10 16:57:38   Using Generalized port mode solver.
+2025-05-19 12:12:16   
 
                       ------------------------------------------------------------------------------
-2025-02-10 16:57:39     -------------------------------- F-Calc 11 ---------------------------------
+2025-05-19 12:12:18   The following discrete edge ports are connected to metal material:
+                      	1, 2
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:18   Using Generalized port mode solver.
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:19     -------------------------------- F-Calc 11 ---------------------------------
                         Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-                        3      1      TEM         377           9.41e-006     377           0.0
+                        3      1      TEM         377           6.39e-006     377           0.0
                         ----------------------------------------------------------------------------
 
-2025-02-10 16:57:39   Pass 1 successfully completed. 
-2025-02-10 16:57:39   
+2025-05-19 12:12:20   Pass 1 successfully completed. 
+2025-05-19 12:12:20   
 
                       ------------------------------------------------------------------------------
-2025-02-10 16:57:39   
+2025-05-19 12:12:20   
 
                       ------------------------------------------------------------------------------
-2025-02-10 16:57:41     -------------------------------- F-Calc 11 ---------------------------------
+2025-05-19 12:12:23   The following discrete edge ports are connected to metal material:
+                      	1, 2
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:25     -------------------------------- F-Calc 11 ---------------------------------
                         Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-                        3      1      TEM         377           1.06e-005     377           0.0
+                        3      1      TEM         377           6.84e-006     377           0.0
                         ----------------------------------------------------------------------------
 
-2025-02-10 16:57:42   Pass 2 successfully completed. Delta (Line Imp.): 0.00%
-2025-02-10 16:57:42   
+2025-05-19 12:12:25   Pass 2 successfully completed. Delta (Line Imp.): 0.00%
+2025-05-19 12:12:26   
 
                       ------------------------------------------------------------------------------
-2025-02-10 16:57:42   
+2025-05-19 12:12:26   
 
                       ------------------------------------------------------------------------------
-2025-02-10 16:57:47     -------------------------------- F-Calc 11 ---------------------------------
+2025-05-19 12:12:31   The following discrete edge ports are connected to metal material:
+                      	1, 2
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:33     -------------------------------- F-Calc 11 ---------------------------------
                         Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-                        3      1      TEM         377           8.93e-006     377           0.0
+                        3      1      TEM         377           6.70e-006     377           0.0
                         ----------------------------------------------------------------------------
 
-2025-02-10 16:57:47   Pass 3 successfully completed. Delta (Line Imp.): 0.00%
-2025-02-10 16:57:47   Adaptive port meshing finished. 
+2025-05-19 12:12:33   Pass 3 successfully completed. Delta (Line Imp.): 0.00%
+2025-05-19 12:12:33   Adaptive port meshing finished. 
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:34   
+                      Solver started at: 2025-05-19 12:12:34 +0300
+
+                        Module:  Time Domain: S-Parameter (Win 64)
+                        Version: 2024.1 Release from 2023-10-16 (change 1181985)
+
+2025-05-19 12:12:34   
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:34   
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:34   ======================================================================
+                       Solver cycle: 1
+                      ======================================================================
+
+                      Stimulation at discrete port 1 
+
+
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:34   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  GHz
+                        Time:       ns
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:34   The dispersive material update [Automatic] will be performed using the "Standard" update schema
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:45   The following discrete edge ports are connected to metal material:
+                      	1, 2
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:45   Mesh statistics:
+
+                         Hexahedral mesh type: Perfect Boundary Approximation (PBA)
+                            Version: default
+
+                         Parallelization type: domain decomposition
+                            Number of parallel working threads: 1
+                            Number of calculation domains used: 1
+
+                         Used point accuracy enhancement value: 72.00%.
+                         Acceleration mode: CPU
+                         PBA fill limit: 98.44% (inverse)
+
+2025-05-19 12:12:47   Using Generalized port mode solver.
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:47   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: electric
+                        Xmax: electric
+
+                        Ymin: magnetic
+                        Ymax: magnetic
+
+                        Zmin: conducting wall
+                        Zmax: open, 4 Layer, depth 2.58804 mm
+
+                        PML-Type: Convolution PML
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:47   Frequency settings: 
+
+                        Fmin:         7
+                        Fmax:         15
+                        Nfsteps(lin): 1001
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:48   Field update statistics:
+
+                        Number of components in total: 	275933
+                        Number of lossy metal components:	7762
+                        Number of disp. elements:		15858
+
+                      Subcycling state:      			Automatically deactivated
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:48   Port: 1
+
+2025-05-19 12:12:48     Discrete element, reference impedance = 50 Ohm
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:48   Port: 2
+
+2025-05-19 12:12:48     Discrete element, reference impedance = 50 Ohm
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:12:48   Waveguide boundaries:
+
+2025-05-19 12:12:48   Port: 3
+
+2025-05-19 12:12:48     -------------------------------- F-Calc 11 ---------------------------------
+                        Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+                        3      1      TEM         377           6.39e-006     377           0.0
+                        ----------------------------------------------------------------------------
+
+2025-05-19 12:13:08   
+                      --------------------------------------------------------------------------------
+2025-05-19 12:13:08   *** Warning ***
+
+2025-05-19 12:13:08   Maximum number of pulse widths simulated, solver stopped.
+                      Please note that the steady state criterion [energy or port signal] could not have been satisfied. More...
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:08   Frequency domain results normalized to default signal.
+
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:08   
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        CAD preparation     18048                         15927056     15927056     
+                        Matrices calc.      148437                        15901367     15810546     
+                        Solver run total    169524                        15935388     15825640     
+                        ----------------------------------------------------------------------------
+
+                      --------------------------------------------------------------------------------
+                      Solver Statistics:
+
+                        Hardware:
+                           Computer name:                 	DESKTOP-2KKGKPO 
+
+                           Number of CPU threads:               6
+                           Hardware info:                  	Hardware Accelerator Device not activated
+
+                        Number of mesh cells:             	44080
+                        Excitation duration:              	8.88637187e-001 ns 
+                        Calculation time for excitation:  	0 	s
+                        Number of calculated pulse widths:	19.9999 
+                        Steady state accuracy limit:      	-80	dB 
+                        Simulated number of time steps:   	42729 
+                        Maximum number of time steps:     	42729 
+                        Time step width:
+                           without subcycles:             	4.159380831e-004 ns
+                           used:                          	4.159380831e-004 ns
+
+                        CAD preparation time:             	0      	s
+                        Matrix calculation time:          	10 	s
+                        Solver setup time:                	5 	s
+                        Solver loop time:                 	16 	s
+                        Solver post-processing time:      	1 	s
+                                                          	------------
+                        Total solver time:                	32 	s
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:09   ======================================================================
+                       Solver cycle: 2
+                      ======================================================================
+
+                      Stimulation at discrete port 2 
+
+
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:09   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  GHz
+                        Time:       ns
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:09   The dispersive material update will be performed using the "Standard" update schema
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:09   The following discrete edge ports are connected to metal material:
+                      	1, 2
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:10   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: electric
+                        Xmax: electric
+
+                        Ymin: magnetic
+                        Ymax: magnetic
+
+                        Zmin: conducting wall
+                        Zmax: open, 4 Layer, depth 2.58804 mm
+
+                        PML-Type: Convolution PML
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:10   Frequency settings: 
+
+                        Fmin:         7
+                        Fmax:         15
+                        Nfsteps(lin): 1001
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:10   Field update statistics:
+
+                        Number of components in total: 	275933
+                        Number of lossy metal components:	7762
+                        Number of disp. elements:		15858
+
+                      Subcycling state:      			Automatically deactivated
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:10   Port: 1
+
+2025-05-19 12:13:10     Discrete element, reference impedance = 50 Ohm
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:10   Port: 2
+
+2025-05-19 12:13:10     Discrete element, reference impedance = 50 Ohm
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:28   
+                      --------------------------------------------------------------------------------
+2025-05-19 12:13:28   *** Warning ***
+
+2025-05-19 12:13:28   Maximum number of pulse widths simulated, solver stopped.
+                      Please note that the steady state criterion [energy or port signal] could not have been satisfied. More...
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:28   Frequency domain results normalized to default signal.
+
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:28   
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        CAD preparation     18048                         15927056     15927056     
+                        Matrices calc.      148437                        15901367     15810546     
+                        Solver run total    179188                        17365100     17342124     
+                        ----------------------------------------------------------------------------
+
+                      --------------------------------------------------------------------------------
+                      Solver Statistics:
+
+                        Hardware:
+                           Computer name:                 	DESKTOP-2KKGKPO 
+
+                           Number of CPU threads:               6
+                           Hardware info:                  	Hardware Accelerator Device not activated
+
+                        Number of mesh cells:             	44080
+                        Excitation duration:              	8.88637187e-001 ns 
+                        Calculation time for excitation:  	0 	s
+                        Number of calculated pulse widths:	19.9999 
+                        Steady state accuracy limit:      	-80	dB 
+                        Simulated number of time steps:   	42729 
+                        Maximum number of time steps:     	42729 
+                        Time step width:
+                           without subcycles:             	4.159380831e-004 ns
+                           used:                          	4.159380831e-004 ns
+
+                        Reloading matrices:               	0 	s
+                        Solver setup time:                	3 	s
+                        Solver loop time:                 	15 	s
+                        Solver post-processing time:      	1 	s
+                                                          	------------
+                        Total solver time:                	19 	s
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:29   ======================================================================
+                       Solver cycle: 3
+                      ======================================================================
+
+                      Stimulation at port 3 (mode 1) 
+
+
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:29   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  GHz
+                        Time:       ns
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:29   The dispersive material update will be performed using the "Standard" update schema
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:29   The following discrete edge ports are connected to metal material:
+                      	1, 2
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:30   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: electric
+                        Xmax: electric
+
+                        Ymin: magnetic
+                        Ymax: magnetic
+
+                        Zmin: conducting wall
+                        Zmax: open, 4 Layer, depth 2.58804 mm
+
+                        PML-Type: Convolution PML
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:30   Frequency settings: 
+
+                        Fmin:         7
+                        Fmax:         15
+                        Nfsteps(lin): 1001
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:30   Field update statistics:
+
+                        Number of components in total: 	275933
+                        Number of lossy metal components:	7762
+                        Number of disp. elements:		15858
+
+                      Subcycling state:      			Automatically deactivated
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:30   Port: 1
+
+2025-05-19 12:13:30     Discrete element, reference impedance = 50 Ohm
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:30   Port: 2
+
+2025-05-19 12:13:30     Discrete element, reference impedance = 50 Ohm
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:34   
+                      --------------------------------------------------------------------------------
+2025-05-19 12:13:34   Steady state energy criterion met, solver finished successfully.
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:34   Frequency domain results normalized to default signal.
+
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:34   
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        CAD preparation     18048                         15927056     15927056     
+                        Matrices calc.      148437                        15901367     15810546     
+                        Solver run total    182196                        17355400     17354944     
+                        ----------------------------------------------------------------------------
+
+                      --------------------------------------------------------------------------------
+                      Solver Statistics:
+
+                        Hardware:
+                           Computer name:                 	DESKTOP-2KKGKPO 
+
+                           Number of CPU threads:               6
+                           Hardware info:                  	Hardware Accelerator Device not activated
+
+                        Number of mesh cells:             	44080
+                        Excitation duration:              	8.88637187e-001 ns 
+                        Calculation time for excitation:  	0 	s
+                        Number of calculated pulse widths:	1.76132 
+                        Steady state accuracy limit:      	-80	dB 
+                        Simulated number of time steps:   	3763 
+                        Maximum number of time steps:     	42729 
+                        Time step width:
+                           without subcycles:             	4.159380831e-004 ns
+                           used:                          	4.159380831e-004 ns
+
+                        Reloading matrices:               	0 	s
+                        Solver setup time:                	3 	s
+                        Solver loop time:                 	1 	s
+                        Solver post-processing time:      	0 	s
+                                                          	------------
+                        Total solver time:                	4 	s
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:35   
+                        Adaptive port meshing time:          	19     	s
+                        Total solver time (all cycles):      	55     	s
+                        Solver initialization and clean-up:  	5      	s
+                                                             	------------
+                        Total simulation time:               	79     	s  ( = 0 h, 1 m, 19 s )
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:35   Solver finished at: 2025-05-19 12:13:35 +0300
+
+
+
+                      ------------------------------------------------------------------------------
+2025-05-19 12:13:36   Creating parametric 1D results for Run ID 1
 
                       ------------------------------------------------------------------------------

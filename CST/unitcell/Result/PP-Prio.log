@@ -14,7 +14,7 @@ Group | Shape-ID | ShapeName | Material | User-priority | 2D/3D-Geometry | Mater
 3 | 31 | </cst/Ports/> 1^t1 | Copper (pure) | n/a | no | pec.rho.surface-impedance. | edge-element.wire. | n/a | FIT_TD
 3 | 32 | </cst/Ports/> 2^t0 | Copper (pure) | n/a | no | pec.rho.surface-impedance. | edge-element.wire. | n/a | FIT_TD
 3 | 33 | </cst/Ports/> 2^t1 | Copper (pure) | n/a | no | pec.rho.surface-impedance. | edge-element.wire. | n/a | FIT_TD
-4 | 2 | Substrate:solid2 | IS400 | n/a | yes | normal. | solid. | n/a | FIT_TD
+4 | 2 | Substrate:solid2 | IS400 | n/a | yes | dispersive-mue.normal. | solid. | n/a | FIT_TD
 5 | 1 | Bottom:solid1 | Copper (pure) | n/a | yes | pec.rho.surface-impedance. | solid. | n/a | FIT_TD
 5 | 3 | Top:solid10 | Copper (pure) | n/a | yes | pec.rho.surface-impedance. | solid. | n/a | FIT_TD
 5 | 4 | Top:solid11 | Copper (pure) | n/a | yes | pec.rho.surface-impedance. | solid. | n/a | FIT_TD
