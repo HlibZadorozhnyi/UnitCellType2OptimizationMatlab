@@ -30,6 +30,8 @@ for i=1:dims
     mv=[mv; (varrange(i,2)-varrange(i,1))/mvden];
 end
 
+mv = ones(7,1);
+
 
 %% PSO parameters
 shw     = 1;   % how often to update display

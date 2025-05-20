@@ -15,8 +15,8 @@ function path_result_USER = runCST(N_results, Wgap, Wline)
     path_project = sprintf('%s\\CST\\unitcell.cst', listing(1).folder);
     
     cmd = sprintf("copy %s  %s", path_project, path_result_USER);
-    disp(cmd);
-    system(cmd);
+    % disp(cmd);
+    [status,cmdout] = system(cmd);
     
     % if isfolder(path_result_CST)
     %     rmdir(path_result_CST, 's')
@@ -40,8 +40,8 @@ function path_result_USER = runCST(N_results, Wgap, Wline)
     fclose(fileID);
     
     cmd = sprintf("%s%s%s -m %s", '"', path_CST, '"', path_bas);
-    disp(cmd);
-    system(cmd);
+    %disp(cmd);
+    [status,cmdout] = system(cmd);
     
     %copyfile(path_result_CST, path_result_USER)
 

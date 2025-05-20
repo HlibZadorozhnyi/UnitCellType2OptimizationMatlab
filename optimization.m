@@ -255,15 +255,16 @@ classdef optimization
                 opt.cost0 = (opt.cost0/N_delta);
             end
 
-            diff1 = (opt.ampl_delta - opt.ampl_delta_D)*1000;
-            if(abs(diff1) > 100)
+            if(opt.ampl_delta > opt.ampl_delta_D)
+                diff1 = (opt.ampl_delta - opt.ampl_delta_D)*1000;
                 opt.cost1 = opt.a1*((diff1)^2);
             end
-
-            diff2 = (opt.ampl_ave_D - opt.ampl_ave)*1000;
-            if(abs(diff2) > 100)
+          
+            if(opt.ampl_ave < opt.ampl_ave_D)
+                diff2 = (opt.ampl_ave_D - opt.ampl_ave)*1000;
                 opt.cost2 = opt.a2*(diff2^2);
             end
+
             opt.cost = opt.cost0 + opt.cost1 + opt.cost2;
         end
     end
